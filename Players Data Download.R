@@ -3,11 +3,11 @@
 
 library(XML)
 #Player1 Data download
-URL1 <- ('http://stats.espncricinfo.com/ci/engine/player/35320.html?class=2;filter=advanced;orderby=start;template=results;trophy=12;type=batting;view=match')
+URL1 <- ('http://stats.espncricinfo.com/ci/engine/player/35320.html?class=2;filter=advanced;orderby=start;template=results;trophy=12;type=batting;view=innings')
 Player1_WC <- readHTMLTable(URL1,header = T,which=4,stringsAsFactors=FALSE)
 
 #Player2 Data download
-URL2 <- ('http://stats.espncricinfo.com/ci/engine/player/28114.html?class=2;filter=advanced;orderby=start;template=results;trophy=12;type=batting;view=match')
+URL2 <- ('http://stats.espncricinfo.com/ci/engine/player/28114.html?class=2;filter=advanced;orderby=start;template=results;trophy=12;type=batting;view=innings')
 Player2_WC <- readHTMLTable(URL2,header = T,which=4,stringsAsFactors=FALSE)
 
 #Player DataSets Structures
